@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select a Country</title>
+    <script src="../js/darkmode.js"></script>
+    <link rel="stylesheet" href="../css/phrases.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1f2bd98ecb.js" crossorigin="anonymous"></script>
+    <script src="../js/simplePhrases.js"></script>
+    <script>
+        (function() {
+            if (localStorage.getItem("darkMode") === "enabled") {
+                document.documentElement.classList.add("dark-mode");
+            }
+        })();
+    </script>
+    
+</head>
+<body>
+    <header>
+      <nav id="topNav">
+      <!--NOT COMPLETE-->
+      <a href="./index.html"><img src="../img/logo2.png" alt="Flag-A-Mania Logo" id="logo"></a>
+        <a href="./play.html" class="navlink">Play</a>
+        <a href="./simplephrases.html" class="navlink">Simple Phrases</a>
+        <a href="./interestingFacts.html" class="navlink">Interesting Facts</a>
+        <i class="fa fa-moon-o" id="darkMode"></i>
+    </nav>
+    </header>
+
+    <h1>Select a Country</h1>
+
+   <div id="searchAndSettings">   
+    <input type="text" class="search-bar" placeholder="Search"><button id="search-button"><i class="fa fa-search" id="search-icon"></i></button>
+    <button class="settings-button"><img src="../img/icons/settings.png" width="30px"></button>
+    </div>
+    <div id="country-container">
+        <div class="row">
+            <div>
+                <button class="country-button" value="us">
+                    <img src="../img/flag/us.svg" alt="United States" width="80" height="60">
+                </button>
+                <p class="country-name">United States</p>
+            </div>
+            <div>
+                <button class="country-button" value="ca">
+                    <img src="../img/flag/ca.svg" alt="Canada" width="80" height="60">
+                </button>
+                <p class="country-name">Canada</p>
+            </div>
+            <div>
+                <button class="country-button" value="mx">
+                    <img src="../img/flag/mx.svg" alt="Mexico" width="80" height="60">
+                </button>
+                <p class="country-name">Mexico</p>
+            </div>
+            <div>
+                <button class="country-button" value="br">
+                    <img src="../img/flag/br.svg" alt="Brazil" width="80" height="60">
+                </button>
+                <p class="country-name">Brazil</p>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button class="country-button" value="ar">
+                    <img src="../img/flag/ar.svg" alt="Argentina" width="80" height="60">
+                </button>
+                <p class="country-name">Argentina</p>
+            </div>
+            <div>
+                <button class="country-button" value="co">
+                    <img src="../img/flag/co.svg" alt="Colombia" width="80" height="60">
+                </button>
+                <p class="country-name">Colombia</p>
+            </div>
+            <div>
+                <button class="country-button" value="pe">
+                    <img src="../img/flag/pe.svg" alt="Peru" width="80" height="60">
+                </button>
+                <p class="country-name">Peru</p>
+            </div>
+            <div>
+                <button class="country-button" value="cl">
+                    <img src="../img/flag/cl.svg" alt="Chile" width="80" height="60">
+                </button>
+                <p class="country-name">Chile</p>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button class="country-button" value="cu">
+                    <img src="../img/flag/cu.svg" alt="Cuba" width="80" height="60">
+                </button>
+                <p class="country-name">Cuba</p>
+            </div>
+            <div>
+                <button class="country-button" value="ve">
+                    <img src="../img/flag/ve.svg" alt="Venezuela" width="80" height="60">
+                </button>
+                <p class="country-name">Venezuela</p>
+            </div>
+            <div>
+                <button class="country-button" value="cr">
+                    <img src="../img/flag/cr.svg" alt="Costa Rica" width="80" height="60">
+                </button>
+                <p class="country-name">Costa Rica</p>
+            </div>
+            <div>
+                <button class="country-button" value="ec">
+                    <img src="../img/flag/ec.svg" alt="Ecuador" width="80" height="60">
+                </button>
+                <p class="country-name">Ecuador</p>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button class="country-button" value="gt">
+                    <img src="../img/flag/gt.svg" alt="Guatemala" width="80" height="60">
+                </button>
+                <p class="country-name">Guatemala</p>
+            </div>
+            <div>
+                <button class="country-button" value="hn">
+                    <img src="../img/flag/hn.svg" alt="Honduras" width="80" height="60">
+                </button>
+                <p class="country-name">Honduras</p>
+            </div>
+            <div>
+                <button class="country-button" value="sv">
+                    <img src="../img/flag/sv.svg" alt="El Salvador" width="80" height="60">
+                </button>
+                <p class="country-name">El Salvador</p>
+            </div>
+            <div>
+                <button class="country-button" value="ni">
+                    <img src="../img/flag/ni.svg" alt="Nicaragua" width="80" height="60">
+                </button>
+                <p class="country-name">Nicaragua</p>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button class="country-button" value="pa">
+                    <img src="../img/flag/pa.svg" alt="Panama" width="80" height="60">
+                </button>
+                <p class="country-name">Panama</p>
+            </div>
+            <div>
+                <button class="country-button" value="ht">
+                    <img src="../img/flag/ht.svg" alt="Haiti" width="80" height="60">
+                </button>
+                <p class="country-name">Haiti</p>
+            </div>
+            <div id="do">
+                <button class="country-button" value="do" id="do-button">
+                    <img src="../img/flag/do.svg" alt="Dominican Republic" width="80" height="60">
+                </button>
+                <p class="country-name" id="do-text">Dominican Republic</p>
+            </div>
+            <div>
+                <button class="country-button" value="jm">
+                    <img src="../img/flag/jm.svg" alt="Jamaica" width="80" height="60">
+                </button>
+                <p class="country-name">Jamaica</p>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button class="country-button" value="bs">
+                    <img src="../img/flag/bs.svg" alt="Bahamas" width="80" height="60">
+                </button>
+                <p class="country-name">Bahamas</p>
+            </div>
+            <div>
+                <button class="country-button" value="bb">
+                    <img src="../img/flag/bb.svg" alt="Barbados" width="80" height="60">
+                </button>
+                <p class="country-name">Barbados</p>
+            </div>
+            <div id="tt">
+                <button class="country-button" value="tt" id="tt-button">
+                    <img src="../img/flag/tt.svg" alt="Trinidad and Tobago" width="80" height="60">
+                </button>
+                <p class="country-name" id="tt-text">Trinidad and Tobago</p>
+            </div>
+            <div>
+                <button class="country-button" value="gy">
+                    <img src="../img/flag/gy.svg" alt="Guyana" width="80" height="60">
+                </button>
+                <p class="country-name">Guyana</p>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button class="country-button" value="sr">
+                    <img src="../img/flag/sr.svg" alt="Suriname" width="80" height="60">
+                </button>
+                <p class="country-name">Suriname</p>
+            </div>
+            <div>
+                <button class="country-button" value="gf">
+                    <img src="../img/flag/gf.svg" alt="French Guiana" width="80" height="60">
+                </button>
+                <p class="country-name">French Guiana</p>
+            </div>
+        </div>
+    </div>
+    <footer id="bottomNav">
+    <img src="../img/small logo.png" width="100" alt="Flag-A-Mania logo">
+    <a href="#help">Help</a>
+    <a href="#share">Share</a>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+<!--Uses code from "https://www.geeksforgeeks.org/create-a-qr-code-scanner-or-reader-in-html-css-javascript/#" to make QR scanner-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="../css/styleIF.css">
+    <title>Interesting Facts | Flag-A-Mania</title>
+    <script src="../js/darkmode.js"></script>
+    <script src="https://kit.fontawesome.com/1f2bd98ecb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      (function() {
+          if (localStorage.getItem("darkMode") === "enabled") {
+              document.documentElement.classList.add("dark-mode");
+          }
+      })();
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav id="topNav">
+      <!--NOT COMPLETE-->
+      <a href="./index.html"><img src="../img/logo2.png"  id="logo"></a>
+        <a href="./play.html" class="navlink">Play</a>
+        <a href="./simplephrases.html" class="navlink">Simple Phrases</a>
+        <a href="./interestingFacts.html" class="navlink">Interesting Facts</a>
+        <i class="fa fa-moon-o" id="darkMode"></i>
+    </nav>
+  </header><br>
+    <div class="container">
+        <h1>Scan QR Codes</h1>
+        <div class="section">
+            <div id="my-qr-reader">
+            </div>
+        </div>
+    </div>
+    <div id="video">
+
+    </div>
+    
+    <script
+        src="https://unpkg.com/html5-qrcode">
+    </script>
+    <script src="../js/cameraIF.js"></script>
+    <footer id="bottomNav">
+      <img src="../img/small logo.png" width="100" alt="Flag-A-Mania logo">
+      <a href="#help">Help</a>
+      <a href="#share">Share</a>
+    </footer>
+</body>
+
+</html>

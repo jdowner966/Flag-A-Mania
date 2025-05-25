@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Game Settings | Flag-A-Mania</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/settingsPreLearning.js"></script>
+  </head>
+  <body>
+    <a href="./play.html" class="exit-button">
+      <img src="../img/icons/close.png" width="40px">
+    </a>
+    <div id="learningSettingsBox">
+      <!--NOT COMPLETE-->
+    <h1 id="triviah1">Learning Game Settings</h1>
+    <form name="mysettings" id="settingsArea">
+      <div class="horizontalSettings">
+        <label for="timer">Next Question Timer:</label>
+        <select name="timer" id="timer" class="settingInputs">
+          <option value="">---</option>
+        </select>
+      </div><br>
+      <div class="horizontalSettings">
+        <label for="rounds">Number of Rounds:</label>
+        <select name="rounds" id="rounds" class="settingInputs">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div><br>
+      <div class="horizontalSettings">
+        <label for="volumeSlider">Sound Volume:</label>
+        <input type="range" min="1" max="100" value="50" class="settingInputs" name="volumeSlider" id="volumeSlider">
+        <p id="sliderTxt"></p>
+      </div><br>
+      <!--NOTE: The elements for these buttons might not be the appropriate ones -->
+      <div class="horizontalSettings">
+        <label for="tts">Text-to-Speech:</label>
+        <button type="button" name="tts" class="settingInputs" id="tts" value="off">OFF</button>
+      </div><br>
+      <div class="finalConfirmation">
+            <button type="button" class="submitButtons" id="cancelButton">Cancel</button>
+            <button type="submit" class="submitButtons" id="confirmButton" name="confirmButton">Confirm</button>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
+
+
+

@@ -1,0 +1,231 @@
+  /*Simple Phrases Individual Page*/
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+  #topNav {
+    display: flex;
+    font-family: 'Fredoka';
+    background-color: #315e9b;
+  align-items: center;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navlink {
+    margin-left: 20px;
+}
+
+a:hover {
+    color: pink;
+}
+
+#logo {
+    width: 100px;
+    padding-left: 5px;
+}
+
+#darkMode {
+    font-size: 40px;
+    border: 2px dashed #ffffff;
+    margin-right: 0;
+    margin-left: auto;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#darkMode:hover {
+    border: 2px solid #ffffff;
+}
+
+#exit {
+    font-size: 80px;
+    margin-top: 20px;
+    float: left;
+}
+
+#exit:hover {
+    color: rgb(30, 3, 100);
+}
+
+.dark-mode #exit {
+    color: rgb(187, 185, 185);
+}
+
+.dark-mode #exit:hover {
+    color: pink;
+}
+
+  #spMainContent {
+    width: 100%;
+    height: 550px;
+    border: 3px solid;
+    border-radius: 5px;
+    background-color: #c5daf6;
+    padding: 10px;
+    margin: 0px auto;
+    margin-top:20px;
+}
+
+#phrasesToggle {
+    background-color: #f0f7ff;
+    padding: 20px 10px;
+    border-radius: 6px;
+}
+
+.spNavLink {
+    position:relative;
+    display:inline-block;
+    text-decoration: none;
+    background-color: #f0f7ff;
+    color: #0e0e52;
+    font-size: 130%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    font-family:'Trebuchet MS';
+}
+
+.spNavLink:hover {
+    background-color: #0e0e52;
+    color: #f0f7ff;
+}
+
+#spTop {
+    display:flex;
+    margin: 0 auto;
+    align-items: center;
+    left: 50%;
+}
+
+#flagImg > img {
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#um {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: 'Fredoka';
+    font-weight: 400;
+    color: #032078;
+    font-size: 400%;
+}
+
+.dark-mode {
+    background-color: #282828;
+    color: white;
+}
+
+.dark-mode h1 {
+    color:#c5daf6
+}
+
+.dark-mode h3 {
+    color: #c5daf6;
+}
+
+.dark-mode #topNav {
+    background-color: #3f3f3f;
+}
+  
+.dark-mode #bottomNav {
+    background-color: #3f3f3f;
+}
+
+.dark-mode nav a:hover{
+    color: pink;
+  }
+
+.dark-mode #spMainContent {
+    background-color: #474646;
+    border-color: #6c6d6e;
+}
+
+.dark-mode #phrasesToggle {
+    background-color: #5d5a5a;
+}
+
+.dark-mode .spNavLink {
+    background-color: #454545;
+    color: #d4d4db;
+}
+
+.dark-mode .spNavLink:hover {
+    background-color: #0e0e52;
+    color: #f0f7ff;
+}
+
+.dark-mode nav a{
+    color: #c5daf6;
+  }
+
+  .dark-mode #bottomNav a{
+    color: #c5daf6;
+}
+
+#bottomNav {
+    display: flex;
+    font-family: 'Fredoka';
+    background-color: #315e9b;
+    align-items: center;
+    padding: 0;
+    height: 80px;
+    bottom: 0;
+    margin-top: 2px;
+    position: relative;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  #bottomNav a {
+      padding-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+  }
+  
+  #bottomNav a:hover {
+      color: pink;
+  }  
+
+  #phraseList {
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+  }
+
+  #originalPhrase {
+    color: #032078;
+    font-size: 30px;
+  }
+
+  #translatedPhrase {
+    color:#315e9b;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .dark-mode #phraseList {
+    color: white;
+  }
+
+  .dark-mode #originalPhrase {
+    color: white;
+  }
+
+  .dark-mode #translatedPhrase {
+    color: rgb(216, 214, 214);
+  }
+
+  .dark-mode #phrasesToggle a {
+    color: rgb(255, 255, 255);
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!-- This is not intended to be an actual HTML page in the final product. This page is strictly meant to contain the HTML code and the styling for both settings boxes. Here are the main goals that need to be achieved using JavaScript.
+
+1. To have the appropriate box appear as a pop-up menu when clicking the "Settings" button on the 'Play' page. Preferably in the form of an animation (like the page dims, then the menu drops down from the top of the page) 
+
+2. We will need to figure out how to save the values from inputs on each setting (i.e. so when the player chooses '5 Seconds' for the timer, the game recognizes that and applies a 5-second timer to each question) and avoid setting values accidentally being reset. Cookies might be the main goal to achieve this.
+
+3. A DOM onclick event will be needed so when you click on the ON/OFF buttons, the text will be changed to "ON" or "OFF".
+
+If you are unsure about how to do these, don't be afraid to consult ChatGPT, but keep in mind the chat logs will have to be submitted in the milestone. -->
+
+<html lang="en">
+  <head>
+    <title>Game Settings | Flag-A-Mania</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/settingsPreGame.js"></script>
+  </head>
+  <body>
+    <a href="./play.html" class="exit-button">
+      <img src="../img/icons/close.png" width="40px">
+    </a>
+    <div id="triviaSettingsBoxSPG">
+    <!--NOT COMPLETE-->
+    <h1 id="triviah1">Trivia Game Settings</h1>
+        <form name="mysettings" id="settingsArea">
+          <div class="horizontalSettings">
+            <label for="timer">Next Question Timer:</label>
+            <select name="timer" id="timer" class="settingInputs">
+              <option value="5">5 secs</option>
+              <option value="10">10 secs</option>
+              <option value="15">15 secs</option>
+              <option value="20">20 secs</option>
+            </select>
+          </div><br>
+          <div class="horizontalSettings">
+            <label for="rounds">Number of Rounds:</label>
+            <select name="rounds" id="rounds" class="settingInputs">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div><br>
+          <div class="horizontalSettings">
+            <label for="volumeSlider">Sound Volume:</label>
+            <input type="range" min="1" max="100" value="50" class="settingInputs" name="volumeSlider" id="volumeSlider">
+            <p id="sliderTxt"></p>
+          </div><br>
+          <!--NOTE: The elements for these buttons might not be the appropriate ones -->
+          <div class="horizontalSettings">
+            <label for="tts">Text-to-Speech:</label>
+            <button type="button" name="tts" class="settingInputs" id="tts" value="off">OFF</button>
+          </div><br>
+          <div class="finalConfirmation">
+                <button type="button" class="submitButtons" id="cancelButton">Cancel</button>
+                <button type="submit" class="submitButtons" id="confirmButton" name="confirmButton">Confirm</button>
+          </div>
+        </form>
+    </div><br>
+    
+  </body>
+</html>

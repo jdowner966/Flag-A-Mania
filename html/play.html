@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Play | Flag-A-Mania</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/playPage.js"></script>
+    <script src="../js/darkmode.js"></script>
+    <script src="https://kit.fontawesome.com/1f2bd98ecb.js" crossorigin="anonymous"></script>
+    <script>
+      (function() {
+          if (localStorage.getItem("darkMode") === "enabled") {
+              document.documentElement.classList.add("dark-mode");
+          }
+      })();
+  </script>
+  </head>
+  <body>
+    <nav id="topNav">
+      <!--NOT COMPLETE-->
+      <a href="./index.html"><img src="../img/logo2.png" alt="Flag-A-Mania Logo" id="logo"></a>
+        <a href="./play.html" class="navlink">Play</a>
+        <a href="./simplephrases.html" class="navlink">Simple Phrases</a>
+        <a href="./interestingFacts.html" class="navlink">Interesting Facts</a>
+        <i class="fa fa-moon-o" id="darkMode"></i>
+    </nav>
+    <main id="mainContent">
+    <div id="settings">
+      <!-- This is the code for the Settings pop-up boxes-->
+      <div id="overlay"></div>
+      <div id="triviaSettingsBox">
+        <h1 class="settingsh1">Trivia Game Settings <i class="fa fa-cog fa-spin"></i></h1>
+        <form name="mysettings" id="settingsArea">
+          <div class="horizontalSettings">
+            <label for="timer">Next Question Timer:</label>
+            <select name="timer" id="timer" class="settingInputs">
+              <option value="5">5 secs</option>
+              <option value="10">10 secs</option>
+              <option value="15">15 secs</option>
+              <option value="20">20 secs</option>
+            </select>
+          </div><br>
+          <div class="horizontalSettings">
+            <label for="questions">Number of Questions:</label>
+            <select name="questions" id="questions" class="settingInputs">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+            </select>
+          </div><br>
+          <div class="horizontalSettings">
+            <label for="volumeSlider">Sound Volume:</label>
+            <input type="range" min="1" max="100" value="50" class="settingInputs" name="volumeSlider" id="volumeSlider">
+            <p id="sliderTxt"></p>
+          </div><br>
+          <!--NOTE: The elements for these buttons might not be the appropriate ones -->
+          <div class="horizontalSettings">
+            <label for="tts">Text-to-Speech:</label>
+            <button type="button" name="tts" class="settingInputs" id="tts" value="off">OFF</button>
+          </div><br>
+          <div class="finalConfirmation">
+                <button type="button" class="submitButtons" id="cancelButton">Cancel</button>
+                <button type="submit" class="submitButtons" id="confirmButton" name="confirmButton">Start Game!</button>
+          </div>
+        </form>
+        </div>
+
+        <div id="learningSettingsBox">
+        <h1 class="settingsh1">Learning Game Settings <i class="fa fa-cog fa-spin"></i></h1>
+        <form name="mysettings">
+          <div class="horizontalSettings">
+            <label for="timer">Next Question Timer:</label>
+            <select name="timer" id="learningTimer" class="settingInputs">
+              <option value="">---</option>
+            </select>
+          </div><br>
+          <div class="horizontalSettings">
+            <label for="questions">Number of Questions:</label>
+            <select name="questions" id="learningQuestions" class="settingInputs">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+            </select>
+          </div><br>
+          <div class="horizontalSettings">
+            <label for="volumeSlider">Sound Volume:</label>
+            <input type="range" min="1" max="100" value="50" class="settingInputs" name="volumeSlider" id="learningVolumeSlider">
+            <p id="learningSliderTxt"></p>
+          </div><br>
+          <!--NOTE: The elements for these buttons might not be the appropriate ones -->
+          <div class="horizontalSettings">
+            <label for="tts">Text-to-Speech:</label>
+            <button type="button" name="tts" class="settingInputs" id="learningTTS" value="off">OFF</button>
+          </div><br>
+          <div class="finalConfirmation">
+                <button type="button" class="submitButtons" id="learningCancelButton">Cancel</button>
+                <button type="submit" class="submitButtons" id="learningConfirmButton" name="confirmButton">Start Game!</button>
+          </div>
+        </form>
+        </div>
+    </div>
+    <!-- Code for the regular page-->
+    <div class="playHead">
+      <h1>Select a Game Mode</h1>
+      <h2 id="settingsSaved"></h2>
+    </div>
+      <div id="largeButtonSection"> 
+           <div class="modeButtonSpace">
+              <!-- <img src="./settings.html"> -->
+              <button type="button" id="triviaMode" class="largeButton"><i class="fa fa-play" id="playIcon"></i>Trivia<br>Mode</button>
+           </div>
+           <div class="modeButtonSpace">
+            <button type="button" id="learningMode" class="largeButton"><i class="fas fa-lightbulb" id="lightbulb"></i>Learning<br>Mode</button>
+           </div>
+      </div>
+    <div id="smallButtonSection">
+      <button type="button" class="smallButton" id="progressButton"><i class="fa fa-line-chart"></i>Progress</button>
+    </div>
+    </main>
+    <footer id="bottomNav">
+      <img src="../img/small logo.png" width="100" alt="Flag-A-Mania logo">
+      <a href="#help">Help</a>
+      <a href="#share">Share</a>
+    </footer>
+
+  </body>
+</html>
+
