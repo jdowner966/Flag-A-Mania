@@ -11,7 +11,7 @@ function startScript() {
           const value = this.value; 
           document.cookie = "countrySPSelected=" + value + ";" + "path=/"
 
-          window.location.href = '../html/countrySimplePhrases.html';
+          window.location.href = './countrySimplePhrases.html';
         });
     });
   }
